@@ -1,0 +1,79 @@
+.site-header {
+    height: 80px;
+    background-color: #111;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 300px;
+    color: aliceblue;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+
+}
+
+.brand-icon {
+    border-radius: 50px;
+
+}
+
+.brand-title {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.auth-actions {
+    display: flex;
+    gap: 25px;
+    
+}
+
+.login-button {
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: large;
+    color: rgb(241, 241, 241);
+
+}
+
+.sign-in-button {
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: large;
+    color: rgb(241, 241, 241);
+
+}
+
+.menu-button {
+    background: none;
+    cursor: pointer;
+    border-radius: 15%;
+
+    font-size: 25px;
+    color: rgb(241, 241, 241);
+}
