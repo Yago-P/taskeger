@@ -1,51 +1,27 @@
 import taskegerLogo from '../../assets/Subaru Brazil 2026.jpeg' 
 import './Header.css'
-import Button from '../Button/Button'
-import React, { useState } from 'react'
+import { Link } from 'react-router'
 
 function Header(){
     
-    
-    const [ logado, setLogado] = useState(false)
-
-    function autenticar(event: React.MouseEvent){
-        event.preventDefault()
-        setLogado(true)
-    }
-
     return(
         <>
             <header className='site-header'>
                 <div className='header-content'>
-                    <a href="/home" className='brand'>
+                    <Link to={'/'} className='brand'>
                         <img src={taskegerLogo} alt="Logo Provisório do Taskeger" width="60" height="60" className='brand-icon'/>
                         <span className='brand-title'>
-                        Taskeger
+                            Taskeger
                         </span>
-                    
-                    </a>
+                    </Link>
                     
                     <div className='header-right'>
-                        {!logado ? 
                         <div className='auth-actions'>
-                            <a href="/login" className='login-button' onClick={autenticar}>
-                                Login
-                            </a>
+                            <Link to={'/login'} className='login-button' >Login</Link>
 
-                            <a href="/sign-in" className='sign-in-button'>
-                                Sign In
-                            </a>
+                            <Link to={'/sign-up'} className='sign-up-button' >Sign Up</Link>
+                            
                         </div>
-                        : 
-                        <div className='user-actions'>
-                            <a href="/user">
-                                Yago
-                            </a>
-
-                            <a href="/homepage">
-                                Sair
-                            </a>
-                        </div>}
                     
                         <button className='menu-button'>
                             ☰
@@ -53,12 +29,6 @@ function Header(){
                     </div>
 
                 </div>
-
-                <div>
-                    <Button texto = 'Login' />
-                    
-                </div>    
-
             </header>
         </>
     )
