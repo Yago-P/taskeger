@@ -1,13 +1,10 @@
 import './Home.css'
-import Header from '../../components/Header/Header'
 
 
 function HomePage() {
   
   return (
-    <>
-      <Header />
-      
+    <>      
       <main>
 
         <div className='container-welcome'>

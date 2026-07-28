@@ -7,7 +7,7 @@ type ButtonProps = {
 function Button({texto} : ButtonProps){
 
     return(
-        <button>
+        <button className='menu-button'>
             {texto}
         </button>
     )

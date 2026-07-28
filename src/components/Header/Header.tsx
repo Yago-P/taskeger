@@ -1,6 +1,7 @@
 import taskegerLogo from '../../assets/Subaru Brazil 2026.jpeg' 
 import './Header.css'
 import { Link } from 'react-router'
+import Button from '../Button/Button'
 
 function Header(){
     
@@ -23,9 +24,7 @@ function Header(){
                             
                         </div>
                     
-                        <button className='menu-button'>
-                            ☰
-                        </button>
+                        <Button texto='☰'/>
                     </div>
 
                 </div>
